@@ -1,1 +1,2 @@
 to compile files in Java --> javac fileName.java
+to run files in Java --> java ClassName
