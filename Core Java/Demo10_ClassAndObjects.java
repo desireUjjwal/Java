@@ -12,3 +12,7 @@ public class Demo10_ClassAndObject {
         System.out.println("Sum: " + sum);
     }
 }
+
+// Object has properties and behaviors
+// Class is a blueprint for creating objects
+// An object is an instance of a class
