@@ -8,7 +8,7 @@ abstract class Car{
 class WagonR extends Car{
     @Override
     public void drive() {        // We need to provide implementation of abstract method
-        // If all abstract methods not implemented, then the subclass must be declared abstract
+        // If all abstract methods are not implemented, then the subclass must be declared abstract
         System.out.println("Driving WagonR");
     }
 }
