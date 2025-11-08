@@ -4,6 +4,7 @@ public class Demo20_Inheritence {
     public static void main(String[] args) {
         // Multiple inheritance is not supported in Java using classes
         // but can be achieved using interfaces.
+        // (Parent, Super, Base), (Child, Sub, Derived) these terminologies are used to identify classes
         AdvCalculator calc = new AdvCalculator();
         int sum = calc.add(5, 3);
         int difference = calc.subtract(10, 4);
