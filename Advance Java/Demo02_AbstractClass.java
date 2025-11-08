@@ -1,4 +1,3 @@
-
 abstract class Car{
     public abstract void drive(); // Abstract method can only be declared in abstract class
     public void playMusic(){  // Abstract class can have all concrete methods
