@@ -1,5 +1,5 @@
 class Mobile{
-    String brand;
+    String brand; // instance variable allocated memory in heap
     int price;
     static String name;
     static{       // static block will be executed only once when the class is loaded
