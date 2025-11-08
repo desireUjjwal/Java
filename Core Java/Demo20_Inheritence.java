@@ -1,4 +1,5 @@
 import Demo20_tools.*;   // * is used for files in the package not folders
+import java.lang.*;// java.lang package is imported by default
 public class Demo20_Inheritence {
     public static void main(String[] args) {
         // Multiple inheritance is not supported in Java using classes
