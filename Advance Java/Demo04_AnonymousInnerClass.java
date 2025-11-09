@@ -3,7 +3,7 @@ class A{
         System.out.println("In A show method");
     }
 }
-public class Demo4_AnonymousInnerClass {
+public class Demo04_AnonymousInnerClass {
     public static void main(String[] args) {
         A obj = new A(){
             @Override
