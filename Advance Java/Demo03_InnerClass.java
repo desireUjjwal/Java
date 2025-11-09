@@ -14,7 +14,7 @@ class A{            // public, abstract and final modifiers are allowed for oute
         }
     }
 }
-public class Demo3_InnerClass {
+public class Demo03_InnerClass {
     public static void main(String[] args) {
         A obj = new A(); // Creating instance of outer class A
         obj.show();
