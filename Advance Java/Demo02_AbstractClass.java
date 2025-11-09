@@ -5,7 +5,7 @@ abstract class Car{
     }
 }
 
-class WagonR extends Car{
+class WagonR extends Car{ // Concrete class
     @Override
     public void drive() {        // We need to provide implementation of abstract method
         // If all abstract methods are not implemented, then the subclass must be declared abstract
