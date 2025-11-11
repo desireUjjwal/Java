@@ -11,7 +11,7 @@ public class Demo18_ExceptionThrow {
 
         }catch(ArithmeticException e){
             j = 16 / 1;
-            System.out.println("That's the deafault output. " + e);
+            System.out.println("That's the deafault output. " + e); //That's the deafault output. java.lang.ArithmeticException: Value of j should not be more than 16
         }catch(Exception e){ 
             System.out.println("Something went wrong: " + e);
         }
