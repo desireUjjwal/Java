@@ -86,3 +86,4 @@ Compiles the source code (compile)
 Packages it into a .jar or .war file (package)
 
 Each maven file used to have groupId, artifactId, and versionId.
+Archetype -> It's like a Templating tool.
