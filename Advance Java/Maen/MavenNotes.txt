@@ -1,0 +1,88 @@
+Maven is a build automation and project management tool primarily used in Java projects.
+It helps developers manage project builds, dependencies, documentation, and deployment in a consistent and automated way.
+
+⚙️ Key Features of Maven
+
+Dependency Management
+
+Maven automatically downloads required JAR files and plugins from a central repository.
+
+You just declare them in a file (called pom.xml).
+
+Example:
+
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>3.2.0</version>
+    </dependency>
+</dependencies>
+
+
+Build Lifecycle
+Maven provides predefined phases like:
+
+compile → compiles source code
+
+test → runs unit tests
+
+package → creates a JAR/WAR file
+
+install → installs to local repository
+
+deploy → deploys to remote repository
+
+Example:
+
+mvn clean install
+
+
+Standard Directory Structure
+Maven follows a standard layout:
+
+project/
+├── src/
+│   ├── main/java/        # source code
+│   └── test/java/        # test code
+├── target/               # output (compiled classes, jars)
+└── pom.xml               # project configuration
+
+
+Project Object Model (POM)
+
+The heart of a Maven project is the pom.xml file.
+
+It defines dependencies, build settings, plugins, and metadata.
+
+🗂️ Repositories
+
+Local Repository: Stored on your computer (~/.m2/repository).
+
+Central Repository: Public repository hosted by Apache.
+
+Remote Repository: Custom repositories (e.g., internal company servers).
+
+🚀 Why Use Maven?
+
+Simplifies dependency management.
+
+Makes builds repeatable and consistent.
+
+Integrates easily with IDEs like IntelliJ, Eclipse, and VS Code.
+
+Works seamlessly with CI/CD tools like Jenkins and GitHub Actions.
+
+📘 Example Command Workflow
+mvn clean compile package
+
+
+This:
+
+Deletes old build files (clean)
+
+Compiles the source code (compile)
+
+Packages it into a .jar or .war file (package)
+
+Each maven file used to have groupId, artifactId, and versionId.
