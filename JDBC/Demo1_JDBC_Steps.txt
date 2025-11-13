@@ -1,0 +1,8 @@
+JDBC steps:
+1. Import Packages
+2. Load Driver
+3. Register Driver
+4. Create Connection //Primary 
+5. Create Statement //Primary 
+6. Execute Statement //Primary 
+7. Close //Primary
