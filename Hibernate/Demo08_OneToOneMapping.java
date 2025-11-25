@@ -32,7 +32,7 @@ public class Main {
 
         Transaction transaction = session.beginTransaction();
 
-        session.persist(a1); // It needs to be persisted first because laptop is the primary table now
+        session.persist(l1); // It needs to be persisted first because laptop is the primary table now
         session.persist(a1);
 
         transaction.commit();
