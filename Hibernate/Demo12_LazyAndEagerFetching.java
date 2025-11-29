@@ -66,7 +66,7 @@ public class Main {
 
         session.close();
         Session session1 = sf.openSession();
-        Alien a5 = session1.get(Alien.class, 101); // this is not firing a select query because of default l1 cache provided by hibernate, we can do sharing of data between multiple sessions using some libraries - l2 caching(eh cache,caffine)
+        Alien a5 = session1.get(Alien.class, 101); // this is not firing a select query because of default l1 cache provided by hibernate, we can do sharing of data between multiple sessions using some libraries - l2 caching(Jcache,caffine)
 //        System.out.println(a5); // If we would not print a5 it will go for lazy fetching otherwise eager fetching (lazy fetching --> It will not fetch collection items like List<Laptop>)
         session1.close();
         sf.close();
