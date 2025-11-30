@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="alien1" class="com.ujjwal.Alien" scope="prototype"> <!--By default scope is singleton and object is Loaded at class initialization time. In case of prototype object is created at getBean() time.-->
+    </bean>
+
+    <bean id="alien2" class="com.ujjwal.Alien">
+    </bean>
+
+    <bean id="lap" class="com.ujjwal.Laptop">  <!-- This bean tag creates object without using id also but how can we make reference in App.java file ?-->
+    </bean>
+
+
+</beans>
