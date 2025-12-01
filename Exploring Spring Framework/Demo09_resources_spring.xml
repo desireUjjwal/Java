@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="alien1" class="com.ujjwal.Alien" scope="prototype">-->
+    <bean id="alien1" class="com.ujjwal.Alien" autowire="byType"> <!-- autowire = "byName" -->
+        <property name="age" value="21" />
+        <property name="com">
+            <bean id="com1" class="com.ujjwal.Laptop" primary="true"> <!-- If we don't make primary as true as while creating two bean of the same type without giving a name will be a problem. -->
+            </bean>
+        </property>
+    </bean>
+</beans>
