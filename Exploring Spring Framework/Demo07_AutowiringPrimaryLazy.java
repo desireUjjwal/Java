@@ -2,6 +2,7 @@ package com.ujjwal;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+
 public class App 
 {
     public static void main( String[] args )
@@ -10,5 +11,7 @@ public class App
         Alien obj1 = (Alien) context.getBean("alien1");
         System.out.println(obj1.getAge());
         obj1.code();
+
+        Desktop obj = (Desktop) context.getBean("com2");
     }
 }
