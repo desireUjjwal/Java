@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="alien1" class="com.ujjwal.Alien" scope="prototype">-->
+    <bean id="alien1" class="com.ujjwal.Alien" autowire="byType"> <!-- autowire = "byName" -->
+        <property name="age" value="21" />
+<!--        <property name="com" ref="com1"/>  If we will explicitly mention ref as com1 or com2 then this will override the behaviour of autowire &ndash;&gt;-->
+    </bean>
+
+    <bean id="com1" class="com.ujjwal.Laptop" primary="true">
+    </bean>
+    <bean id="com2" class="com.ujjwal.Desktop">
+    </bean>
+
+
+
+</beans>
