@@ -16,7 +16,7 @@ public class App
         // mapping for Internal Tomcat server which we use now:
         Context context = tomcat.addContext("",null);
         Tomcat.addServlet(context, "HelloServlet", new HelloServlet());
-        context.addServletMappingDecoded("/hello", "HelloServlet");
+        context.addServletMappingDecoded("/hello", "HelloServlet"); // this is the same name which we are using above
 
         tomcat.start();
         tomcat.getServer().await();
